@@ -14,7 +14,7 @@ npm install extensions-ts
 To use a specific function from `extensions-ts`, directly import the extension you need from its file:
 
 ```ts
-import { Arrays } from 'extensions-ts/src/arrays';
+import { Arrays } from 'extensions-ts/Array.extension.js';
 
 const uniqueItems = Arrays.withoutDuplicates([1, 2, 2, 3, 4, 4, 5]);
 console.log(uniqueItems); // Output: [1, 2, 3, 4, 5]
