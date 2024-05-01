@@ -23,6 +23,11 @@ console.log(uniqueItems); // Output: [1, 2, 3, 4, 5]
 ## Overview
 `extensions-ts` is a TypeScript library offering a collection of functions designed extend other entities. Inspired by Swift-like extensions, this library aims to provide elegant approaches to solving common programming problems in TypeScript.
 
+While extensions-ts provides extensions itself, the main goal of this repository is to inspire developers to embrace the pattern and extend their own entities (as an alternative to OOP-based solutions).
+
+If you are into FP, then this technique will sound familiar as it's functions exported under a
+namespace with some restrictions in the structure of these functions (for discoverability reasons).
+
 ## Available Extensions
 ```ts
 export declare namespace Arrays {
