@@ -3,6 +3,12 @@ Contemplative and deep exploration of extending entities in TypeScript, inspired
 
 Read about extensions here: [Introducing extensions to TypeScript](https://depa-thoughts.vercel.app/extensions-typescript/).
 
+## Installation
+Install the package using npm:
+```bash
+npm install extensions-ts
+```
+
 ## Usage
 
 To use a specific function from `extensions-ts`, directly import the extension you need from its file:
@@ -24,21 +30,6 @@ export declare namespace Arrays {
 }
 ```
 
-## Installation
-Install the package using npm:
-```bash
-npm install extensions-ts
-```
-
-## Tests
-
-To run the tests for `extensions-ts`, follow these steps:
-
-```bash
-npm install
-npm run test
-```
-
 ## Rationale
 The general guidelines for extending an entity are:
 1. Extensions should be placed in their own file, typically `<entity>.extension.ts`, although this can vary at the implementer’s discretion. (e.g., `Array.extension.ts`)
@@ -55,6 +46,15 @@ These guidelines ensure that extensions are self-contained, isolated, shareable,
 For a deeper dive into the reasoning behind the design of `extensions-ts`, check out my blog post: [Introducing extensions to TypeScript](https://depa-thoughts.vercel.app/extensions-typescript/).
 
 While extensions-ts provides extensions themselves, the main goal of this repository is to inspire developers to embrace and extend their own entities (as an alternative to OOP-based solutions).
+
+## Tests
+
+To run the tests for `extensions-ts`, follow these steps:
+
+```bash
+npm install
+npm run test
+```
 
 ## Contributing
 
