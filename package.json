@@ -1,6 +1,6 @@
 {
   "name": "extensions-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A modular collection of TypeScript extensions for various entities like arrays and objects",
   "main": "./dist/index.js",
   "exports": {
