@@ -1,6 +1,6 @@
 {
   "name": "extensions-ts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A modular collection of TypeScript extensions for various entities like arrays and objects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FranDepascuali/extensions-ts"
+    "url": "git+https://github.com/FranDepascuali/extensions-ts.git"
   },
   "keywords": [
     "typescript",
