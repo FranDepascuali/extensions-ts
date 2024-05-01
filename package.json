@@ -1,0 +1,25 @@
+{
+  "name": "ts-extensions",
+  "version": "1.0.0",
+  "description": "A modular collection of TypeScript extensions for various entities like arrays and objects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.x",
+    "jest": "^27.x",
+    "ts-jest": "^27.x",
+    "@types/jest": "^27.x"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.ts"
+    ]
+  }
+}
