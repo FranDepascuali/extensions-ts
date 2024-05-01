@@ -1,5 +1,6 @@
 # ts-extensions
-Contemplative and deep exploration of extending entities in TypeScript (inspired by Swift-like extensions)
+Contemplative and deep exploration of extending entities in TypeScript (inspired by Swift-like extensions).
+Wrote about extensions here [Introducing extensions to TypeScript](https://depa-thoughts.vercel.app/extensions-typescript/).
 
 ## Usage
 
