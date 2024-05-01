@@ -1,19 +1,32 @@
 {
   "name": "ts-extensions",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A modular collection of TypeScript extensions for various entities like arrays and objects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranDepascuali/ts-extensions"
+  },
+  "keywords": [
+    "typescript",
+    "extensions",
+    "arrays",
+    "objects"
+  ],
+  "author": "Depa",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^4.x",
-    "jest": "^27.x",
-    "ts-jest": "^27.x",
-    "@types/jest": "^27.x"
+    "typescript": "^4.5.2",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.4.3",
+    "@types/jest": "^27.4.0"
   },
   "jest": {
     "preset": "ts-jest",
