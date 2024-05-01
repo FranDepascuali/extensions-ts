@@ -5,7 +5,12 @@
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"
