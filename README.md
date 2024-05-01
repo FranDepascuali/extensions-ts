@@ -6,7 +6,7 @@ Read about extensions here: [Introducing extensions to TypeScript](https://depa-
 ## Installation
 Install the package using npm:
 ```bash
-npm install extensions-ts
+npm install extensions-ts # or yarn add extensions-ts or pnpm add extensions-ts
 ```
 
 ## Usage
