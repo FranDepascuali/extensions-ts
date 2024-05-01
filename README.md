@@ -3,7 +3,7 @@ Contemplative and deep exploration of extending entities in TypeScript (inspired
 
 ## Usage
 
-To use the functions from `ts-extensions`, import the specific extension namespace you need:
+To use the functions from `ts-extensions`, import the extension you need:
 
 ```ts
 import { Arrays } from 'ts-extensions';
