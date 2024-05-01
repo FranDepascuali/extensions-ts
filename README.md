@@ -17,6 +17,10 @@ console.log(uniqueItems); // Output: [1, 2, 3, 4, 5]
 ## Overview
 `ts-extensions` is a TypeScript library offering a collection of functions designed extend other entities. Inspired by Swift-like extensions, this library aims to provide elegant approaches to solving common programming problems in TypeScript.
 
+## Available Extensions
+- **[Arrays](./src/Array.extension.ts)**
+  - [withoutDuplicates](./src/Array.extension.ts#L2): Removes duplicate elements from an array (based on a key function if provided).
+
 ## Installation
 Install the package using npm:
 ```bash
