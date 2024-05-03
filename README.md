@@ -81,6 +81,23 @@ These guidelines ensure that extensions are self-contained, isolated, shareable,
 
 For a deeper dive into the reasoning behind the design of `extensions-ts`, check out my blog post: [Introducing extensions to TypeScript](https://depa-thoughts.vercel.app/extensions-typescript/).
 
+### Example
+Let's consider we want to overload array. We create an array extension `Array.extension.ts`:
+```ts
+// We're extending Array, so by convention we use the pluralized name Arrays
+export namespace Arrays {
+    // As it's a function that belongs to an extension, it receives the entity as it's first parameter
+    export function compactMap<T, U>(array: T[], mapper: (element: T) => U | null): U[] {
+        ...
+    }
+
+    // Other functions belonging to the extension
+    export function intersection<T>(array: T[], array2: T[]): T[] {
+        ...
+    }
+
+```
+
 ## Tests
 
 To run the tests for `extensions-ts`, follow these steps:
