@@ -71,8 +71,8 @@ The general guidelines for extending an entity are:
 3. An entity should be represented by a type from the type system.
 4. Extensions are named as the pluralized version of the entity extended.
 5. Extension functions can either:
-   1. receive the extended entity as their first parameter, along with any additional parameters.
-   2. Compute a value (i.e: `Numbers.maxValue()`)
+   1. receive the extended entity as the first parameter, along with any additional parameters.
+   2. receive no parameter and return a value (i.e: `Numbers.maxValue()`)
 6. Extensions can call other extensions when appropriate, modelling behaviors as extensions wherever possible.
 7. Extensions should be pure, ensuring that every function is a transformation without side effects.
 8.  Extensions can utilize properties or functions previously defined in the entity they extend.
