@@ -48,8 +48,8 @@ export declare namespace Numbers {
     function random(min: number, max: number): number;
 }
 
-export declare abstract class Objects {
-    static isEmpty(obj: any): boolean;
+export declare namespace Objects {
+    function isEmpty(obj: any): boolean;
 }
 
 export declare namespace Strings {
@@ -63,10 +63,12 @@ The general guidelines for extending an entity are:
 2. Extensions are inherently linked to the existence of the entity they extend (without embodying an entity themselves).
 3. An entity should be represented by a type from the type system.
 4. Extensions are named as the pluralized version of the entity extended.
-5. Extensions always receive the extended entity as their first parameter, along with any additional parameters.
-6. Extensions should call upon other extensions when appropriate, emphasizing behaviors as extensions wherever feasible.
+5. Extension functions can either:
+   1. receive the extended entity as their first parameter, along with any additional parameters.
+   2. Compute a value (i.e: `Numbers.maxValue()`)
+6. Extensions can call other extensions when appropriate, modelling behaviors as extensions wherever possible.
 7. Extensions should be pure, ensuring that every function is a transformation without side effects.
-8. Extensions can utilize properties or functions previously defined in the entity they extend.
+8.  Extensions can utilize properties or functions previously defined in the entity they extend.
 
 These guidelines ensure that extensions are self-contained, isolated, shareable, and testable by definition.
 
