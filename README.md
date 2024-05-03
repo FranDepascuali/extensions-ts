@@ -6,7 +6,14 @@ Read about extensions here: [Introducing extensions to TypeScript](https://depa-
 ## Installation
 Install the package using npm:
 ```bash
-npm install extensions-ts # or yarn add extensions-ts or pnpm add extensions-ts
+# Using npm
+npm install extensions-ts
+
+# Using Yarn
+yarn add extensions-ts
+
+# Using pnpm
+pnpm add extensions-ts
 ```
 
 ## Usage
@@ -73,8 +80,6 @@ The general guidelines for extending an entity are:
 These guidelines ensure that extensions are self-contained, isolated, shareable, and testable by definition.
 
 For a deeper dive into the reasoning behind the design of `extensions-ts`, check out my blog post: [Introducing extensions to TypeScript](https://depa-thoughts.vercel.app/extensions-typescript/).
-
-While extensions-ts provides extensions themselves, the main goal of this repository is to inspire developers to embrace and extend their own entities (as an alternative to OOP-based solutions).
 
 ## Tests
 
