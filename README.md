@@ -32,6 +32,28 @@ namespace with some restrictions in the structure of these functions (for discov
 ```ts
 export declare namespace Arrays {
     function withoutDuplicates<T, K>(array: T[], keyFn?: (item: T) => K): T[];
+    function groupBy<T, K extends keyof T>(array: T[], key: K | ((obj: T) => string)): Record<string, T[]>;
+    function compactMap<T, U>(array: T[], mapper: (element: T) => U | null): U[];
+    function findMap<T, U>(array: T[], mapper: (element: T) => U | null): U | null;
+    function intersection<T>(array1: T[], array2: T[]): T[];
+    function zip<T, U>(array: T[], array2: U[]): Array<[T, U, number]>;
+    function partition<T, M>(xs: T[], pred: (arg0: T) => boolean, transformer: (arg0: T) => M): [M[], M[]];
+    function maxBy<T>(array: T[], fn: (item: T, index: number) => number): T | undefined;
+    function minBy<T>(array: T[], iteratee: (value: T) => number): T | undefined;
+}
+
+export declare namespace Numbers {
+    function maxValue(): number;
+    function minValue(): number;
+    function random(min: number, max: number): number;
+}
+
+export declare abstract class Objects {
+    static isEmpty(obj: any): boolean;
+}
+
+export declare namespace Strings {
+    function capitalizeFirstLetter(word: string): string;
 }
 ```
 
